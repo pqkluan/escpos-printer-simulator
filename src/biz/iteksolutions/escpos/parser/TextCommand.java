@@ -1,8 +1,5 @@
 package biz.iteksolutions.escpos.parser;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class TextCommand extends Command implements IContentOutput {
 
     private boolean isChinese = false;
@@ -25,8 +22,12 @@ public class TextCommand extends Command implements IContentOutput {
     public void setChinese(boolean chinese) {
         isChinese = chinese;
     }
+    
+    public boolean getIsChinese() {
+		return isChinese;
+	}
 
-    @Override
+	@Override
     public String getText() {
         String result = sb.toString();
         return result;

@@ -1,6 +1,5 @@
 package biz.iteksolutions.escpos.parser;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class UnknownDataSubCommand extends Command {
